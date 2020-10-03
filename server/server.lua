@@ -1,3 +1,9 @@
+local VorpCore = {}
+
+TriggerEvent("getCore",function(core)
+    VorpCore = core
+end)
+
 RegisterNetEvent("vorp_DeliveryJob:payout")
 AddEventHandler("vorp_DeliveryJob:payout", function(cash, gold, xp)
     local _source = source
